@@ -5,7 +5,7 @@ const NinetiesWebsite = () => {
   return (
     <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto space-y-6">
       <header className="border-b-2 border-black pb-8 mb-12 mt-16 space-y-4">
-        <h1 className="text-5xl font-bold">{name}</h1>
+        <h1 className="text-5xl font-bold tracking-">{name}</h1>
         <p>Towards safe deployment of fully agentic sytems</p>
       </header>
 
@@ -14,59 +14,6 @@ const NinetiesWebsite = () => {
 
       <main className="space-y-12">
 
-        {/* ASCII ART */}
-        <p className="text-xs space-y-6 text-gray-500">
-          <pre>
-            {`
-                             .-://++ossyyyyyhhhhddddmmmmNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                        ':ohmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                     -odNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-                  :smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-               .+dMMMMMMMMMMMMMMMMNNmmddhhyso+/:-..''   ''..:/+osyhdmmNNMMMMMMMMMMMMMMMMMM
-             :yNMMMMMMMMMMMMNds+:..'                              ''.-:+sydNMMMMMMMMMMMMMMM
-           /dMMMMMMMMMMMMh/.                                              '-+hMMMMMMMMMMMMM
-         /mMMMMMMMMMMMm+'                                                    .sMMMMMMMMMMM
-       :dMMMMMMMMMMMMo'                                                        -mMMMMMMMMMM
-      +NMMMMMMMMMMMMo                                                           /MMMMMMMMMM
-    'yMMMMMMMMMMMMMd                                                             dMMMMMMMMM
-   'hMMMMMMMMMMMMMMy                                             '-:/+++//:-'    yMMMMMMMMM
-  'dMMMMMMMMMMMMMMMd'                                        ':ohmmNMMMMMMMNNdy/..mMMMMMMMM
-  yMMMMMMNho/:-yMMMMs                                      .omMMMMMMMMMMMMMMMMMNh:sMMMMMMMM
- +MMMms:.      oMMMMN.                                    +NMMMMMMMNhyssydNMMMMMMm/NMMMMMMM
- os/.         'dMMMMMy                                  'hMMMMMNho-'     '.+hMMMMMmhMMMMMMM
-             'hMMMMMMM:            '...'                +MMMMNh:'            '/dMMMMmMMMMMM
-             oMMMMMMMMs         '/ydNNmds:              /MMMMMMy'.:////::-.'   yMMMMMMMMMMM
-            /MMMMMMMMMm'       .dMMMMMMMMs             'NMMMMMMMmMMMMMMMMMNd+' oMMMMMMMMMMM
-           :NMMMMMMMMMMo        .sNMMMNh/              sMMMMMMMMMho++oydNMMMN- hMMMMMMMMMMM
-          -NMMMMMMMMMMM+          .:+o/.              :mMMMMMMMMM+     './hNMs'mMMMMMMMMMMM
-         'dMMMMMMMMMMMN.                             'yMMMMMNdNMMN-        .sN-NMMMMMMMMMMM
-         yMMMMMMMMMMMMo                             'hMMMMNs. +MMM/         :d.MMMMMMMMMMMM
-        +MMMMMMMMMMMMs                             /mMMMMy.   /MMMo         /:+MMMMMMMMMMMM
-       :NMMMMMMMMMMMd'                           'sMMMMMMMdhhmMMMMh'        ''mMMMMMMMMMMMM
-      .mMMMMMMMMMMMM:                           .dMMMMMMMMMMMMMMMMs         'sMMMMMMMMMMMMM
-     'yMMMMMMMMMMMMN                           -NMMMMdso/:/+sydMMMN'     ''-yMMMMMMMMMMMMMM
-     oMMMMMMMMMMMMMm                          /NMMMm+'        .yMMM/    omNMMMMMMMMMMMMMMM
-    /MMMMMMMMMMMMMM/                         yMMMMMMNmdhyyhdmNMMMMm     ''-+hMMMMMMMMMMMM
-   -NMMMMMMMMMMMMMM'                       'hMMMMMMMMMMMMMMMMMMMMMM+        'sMMMMMMMMMM
-  .mMMMMMMMMMMMMMMh                       /mMMMMNdyso+++osyhmNMMMMMM-         yMMMMMMMMM
- 'hMMMMMMMMMMMMMMMM+''                 '+mMMMMd/'            ./hMMMMd         .MMMMMMMMM
- oMMMMMMMMMd+//hMMMNds/.            ':smMMMNy-                  '+mMd'         dMMMMMMMM
-:MMMMMMMMMm.   sMMMMMMMmy:.     '.:sdNMMMNs.                       :o         'dMMMMMMMMM
-dMMMMMMMMM-   hMMMMMMMMMMMmo::+ymMMMMMMm/                                    /NMMMMMMMMMM
-MMMMMMMMMM+  sMMMMMMMMMMMMMMMMMMMMMMMMMMo                                  -dMMMMMMMMMMM
-MMMMMMMMMMMysmMMMMMMMMMMMMMMMMMMMMMMMMMMMd.                               /mMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMMMNmddddmNMMMMMMMMMMMMh:                           :dMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMMMMd:.''    '-+dMMMMMMMMMMNy-                      .sNMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMmy+.             -yNMMMMMMMMMNy:'               ':smMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMNh+.'                   /dMMMMMMMMMMds:.'       '.:sdNMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMd:'                         -sNMMMMMMMMMNdyo++osydNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMmyo/-.''              ''.:+hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMMNdhyyso++///++osyhhmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        
-          `}
-          </pre>
-          <p className="text-right text-gray-300 text-xs"><i>Symbiotic Reflections, by <a href="https://x.com/dyot_meet_mat/status/1838665571702878325?t=biJBJEj7acy96UaJyPDJSQ">Claude 3 Opus & Mona</a></i></p>
-        </p>
         <section>
           <h2 className="text-3xl font-bold my-8">Are you sure you want to deploy that?</h2>
           <p className="mb-6">Increasingly capable agentic AI system with web access and code execution abilities presents significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and enterprises trying to deploy agents into the wild to solve useful tasks.</p>
@@ -114,13 +61,10 @@ MMMMMMMMMMMMMMMMMMNdhyyso++///++osyhhmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
         <section className="mt-16">
           <p className="text-center text-xl">
-            <a href="#" className="text-blue-700 underline mr-8">Contact Our Team</a>
-            <a href="#" className="text-blue-700 underline">Request a Demonstration</a>
+            <a href="#" className="text-blue-700 underline mr-8">contact</a>
           </p>
         </section>
       </main>
-
-
 
       <footer className="mt-16 pt-8 border-t-2 border-black text-center text-sm">
         <p>&copy; 2024 {name}. All rights reserved.</p>
