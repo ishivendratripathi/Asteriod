@@ -1,49 +1,104 @@
 import React from 'react';
 
 const NinetiesWebsite = () => {
+  const name = 'scalar labs';
   return (
-    <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto">
+    <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto space-y-6">
       <header className="border-b-2 border-black pb-8 mb-12 mt-16 space-y-4">
-        <h1 className="text-4xl font-bold">attractorstate.ai</h1>
-        <p>Towards safe deployment of fully agentic sytems into the wild</p>
+        <h1 className="text-5xl font-bold">{name}</h1>
+        <p>Towards safe deployment of fully agentic sytems</p>
       </header>
 
+
+
+
       <main className="space-y-12">
+
+        {/* ASCII ART */}
+        <p className="text-xs space-y-6 text-gray-500">
+          <pre>
+            {`
+                             .-://++ossyyyyyhhhhddddmmmmNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                        ':ohmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                     -odNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+                  :smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+               .+dMMMMMMMMMMMMMMMMNNmmddhhyso+/:-..''   ''..:/+osyhdmmNNMMMMMMMMMMMMMMMMMM
+             :yNMMMMMMMMMMMMNds+:..'                              ''.-:+sydNMMMMMMMMMMMMMMM
+           /dMMMMMMMMMMMMh/.                                              '-+hMMMMMMMMMMMMM
+         /mMMMMMMMMMMMm+'                                                    .sMMMMMMMMMMM
+       :dMMMMMMMMMMMMo'                                                        -mMMMMMMMMMM
+      +NMMMMMMMMMMMMo                                                           /MMMMMMMMMM
+    'yMMMMMMMMMMMMMd                                                             dMMMMMMMMM
+   'hMMMMMMMMMMMMMMy                                             '-:/+++//:-'    yMMMMMMMMM
+  'dMMMMMMMMMMMMMMMd'                                        ':ohmmNMMMMMMMNNdy/..mMMMMMMMM
+  yMMMMMMNho/:-yMMMMs                                      .omMMMMMMMMMMMMMMMMMNh:sMMMMMMMM
+ +MMMms:.      oMMMMN.                                    +NMMMMMMMNhyssydNMMMMMMm/NMMMMMMM
+ os/.         'dMMMMMy                                  'hMMMMMNho-'     '.+hMMMMMmhMMMMMMM
+             'hMMMMMMM:            '...'                +MMMMNh:'            '/dMMMMmMMMMMM
+             oMMMMMMMMs         '/ydNNmds:              /MMMMMMy'.:////::-.'   yMMMMMMMMMMM
+            /MMMMMMMMMm'       .dMMMMMMMMs             'NMMMMMMMmMMMMMMMMMNd+' oMMMMMMMMMMM
+           :NMMMMMMMMMMo        .sNMMMNh/              sMMMMMMMMMho++oydNMMMN- hMMMMMMMMMMM
+          -NMMMMMMMMMMM+          .:+o/.              :mMMMMMMMMM+     './hNMs'mMMMMMMMMMMM
+         'dMMMMMMMMMMMN.                             'yMMMMMNdNMMN-        .sN-NMMMMMMMMMMM
+         yMMMMMMMMMMMMo                             'hMMMMNs. +MMM/         :d.MMMMMMMMMMMM
+        +MMMMMMMMMMMMs                             /mMMMMy.   /MMMo         /:+MMMMMMMMMMMM
+       :NMMMMMMMMMMMd'                           'sMMMMMMMdhhmMMMMh'        ''mMMMMMMMMMMMM
+      .mMMMMMMMMMMMM:                           .dMMMMMMMMMMMMMMMMs         'sMMMMMMMMMMMMM
+     'yMMMMMMMMMMMMN                           -NMMMMdso/:/+sydMMMN'     ''-yMMMMMMMMMMMMMM
+     oMMMMMMMMMMMMMm                          /NMMMm+'        .yMMM/    omNMMMMMMMMMMMMMMM
+    /MMMMMMMMMMMMMM/                         yMMMMMMNmdhyyhdmNMMMMm     ''-+hMMMMMMMMMMMM
+   -NMMMMMMMMMMMMMM'                       'hMMMMMMMMMMMMMMMMMMMMMM+        'sMMMMMMMMMM
+  .mMMMMMMMMMMMMMMh                       /mMMMMNdyso+++osyhmNMMMMMM-         yMMMMMMMMM
+ 'hMMMMMMMMMMMMMMMM+''                 '+mMMMMd/'            ./hMMMMd         .MMMMMMMMM
+ oMMMMMMMMMd+//hMMMNds/.            ':smMMMNy-                  '+mMd'         dMMMMMMMM
+:MMMMMMMMMm.   sMMMMMMMmy:.     '.:sdNMMMNs.                       :o         'dMMMMMMMMM
+dMMMMMMMMM-   hMMMMMMMMMMMmo::+ymMMMMMMm/                                    /NMMMMMMMMMM
+MMMMMMMMMM+  sMMMMMMMMMMMMMMMMMMMMMMMMMMo                                  -dMMMMMMMMMMM
+MMMMMMMMMMMysmMMMMMMMMMMMMMMMMMMMMMMMMMMMd.                               /mMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMNmddddmNMMMMMMMMMMMMh:                           :dMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMd:.''    '-+dMMMMMMMMMMNy-                      .sNMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMmy+.             -yNMMMMMMMMMNy:'               ':smMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMNh+.'                   /dMMMMMMMMMMds:.'       '.:sdNMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMd:'                         -sNMMMMMMMMMNdyo++osydNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMmyo/-.''              ''.:+hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMNdhyyso++///++osyhhmNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+        
+          `}
+          </pre>
+          <p className="text-right text-gray-300 text-xs"><i>Symbiotic Reflections, by <a href="https://x.com/dyot_meet_mat/status/1838665571702878325?t=biJBJEj7acy96UaJyPDJSQ">Claude 3 Opus & Mona</a></i></p>
+        </p>
         <section>
-          <h2 className="text-3xl font-bold mb-4">Addressing the Challenges of Safe Agent Deployment</h2>
-          <p className="mb-6">In the rapidly evolving field of artificial intelligence, the deployment of complex AI agents with web access and code execution abilities presents significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and AI developers worldwide.</p>
-          <p className="mb-6">Current oversight technologies often fall short in detecting and blocking problematic behaviors, potentially hindering confident deployment in real-world scenarios. Our platform addresses the following key challenges:</p>
+          <h2 className="text-3xl font-bold my-8">Are you sure you want to deploy that?</h2>
+          <p className="mb-6">Increasingly capable agentic AI system with web access and code execution abilities presents significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and enterprises trying to deploy agents into the wild to solve useful tasks.</p>
+          <p>We're transitioning into a world where:</p>
           <ul className="list-disc pl-8 mb-6 space-y-2">
-            <li>Limited real-time monitoring of AI agent actions</li>
-            <li>Insufficient flexibility in approval mechanisms</li>
-            <li>Inefficiencies in managing large-scale agent evaluations</li>
+            <li>agents will be regularly writing and executing arbitrary code autonomously</li>
+            <li>agents will be <a className="text-blue-500" href="https://www.skyfire.xyz">making payments</a> on your behalf</li>
+            <li>agents will be interacting with humans in <a className="text-blue-500" href="https://www.netcraft.com/news/netcraft-announces-new-ai-powered-innovations/">negotations without human oversight</a></li>
+            <li>Self-healing and evolving during runtime</li>
+
+
+          </ul>
+          <p className="mb-6">Current oversight techniques like continual human monitoring are not a viable long term solution as we move towards clusters of millions of agents performing economically useful activity on the internet. It is imperative that those deploying agents in the wild have the ability to detect and avoid problematic or unintended behaviors of their systems. Lack of these systems will hinder confident deployment in real-world scenarios and limit the usefulness of agent research and activity. Our platform addresses the following key challenges:</p>
+          <ul className="list-disc pl-8 mb-6 space-y-2">
+            <li>There are no good solutions to real-time monitoring of AI agent actions</li>
+            <li>Approval mechanisms for accepting or rejecting agent actions are primitive and inflexible</li>
+            <li>Lack of high-fidelity monitoring and oversight makes managing large-scale agent evaluations hard</li>
             <li>Lack of a standardized framework for implementing oversight across different AI systems</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-4">Key Features of Our Platform</h2>
+          <h2 className="text-3xl font-bold mb-4">Advanced agent oversight</h2>
+          <p>We're proposing a way to monitor agents operating at scale in the wild. With just a few lines of code added to your agentic system scaffold we can provide you with security and oversight mechanisms customized to your needs, so that you can have peace of mind when deploying your systems. Our features include:</p>
           <ol className="list-decimal pl-8 space-y-4">
+            <li><strong>Human-in-the-Loop Interface:</strong> Efficient monitoring and intervention interface for human reviewers</li>
             <li><strong>Pluggable Approvers:</strong> A flexible system of approval mechanisms customizable to specific AI applications, ranging from simple allow-list checks to complex AI-powered oversight models.</li>
             <li><strong>Approval Manager:</strong> Orchestrates multiple Approvers, handling escalations and logging decisions for a layered approach to oversight, combining automated checks with human intervention when necessary.</li>
             <li><strong>Granular Action Monitoring:</strong> Comprehensive monitoring of network requests, executed commands, and detailed actions in headless browsers, providing unparalleled visibility into AI agent behaviors.</li>
             <li><strong>Policy-Based Control:</strong> Define custom policies for automatic approval or blocking of agent actions based on predefined criteria, reducing the need for constant human supervision.</li>
-            <li><strong>Human-in-the-Loop Interface:</strong> Efficient monitoring and intervention interface for human reviewers, supporting both CLI and web-based interactions for maximum flexibility.</li>
             <li><strong>Scalable Architecture:</strong> Designed to handle multiple concurrent AI agents for efficient large-scale evaluations and deployments, future-proofing your research infrastructure.</li>
           </ol>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-bold mb-4">Implementation Details</h2>
-          <p className="mb-6">Our platform is developed with a focus on integration and scalability, particularly emphasizing compatibility with the Inspect AI framework used by the UK's AI Safety Institute. Key implementation details include:</p>
-          <ul className="list-disc pl-8 space-y-4">
-            <li><strong>Approver System:</strong> Implements various Approver types, including AllowListApprover for predefined safe commands and HumanApprover for manual intervention.</li>
-            <li><strong>Approval Manager:</strong> Manages Approver chains, handles decision-making and logging, and provides a central point for orchestrating the approval process.</li>
-            <li><strong>Integration with Inspect AI:</strong> Initially implemented as external tools, with plans for deeper integration to create an Approval extension point within Inspect.</li>
-            <li><strong>User Interface:</strong> Web-based or CLI interface using cutting-edge technologies like websockets or Textualize for responsive and efficient user interactions.</li>
-            <li><strong>Scalability Enhancements:</strong> Designed to handle multiple concurrent Inspect instances, with websocket demultiplexing for efficient communication between multiple agents and a single review interface.</li>
-            <li><strong>Future Developments:</strong> Plans for asynchronous operations, flexible approval modes, and an innovative "Action Runway" feature to reduce overhead for repetitive safe actions.</li>
-          </ul>
         </section>
 
         <section>
@@ -65,11 +120,14 @@ const NinetiesWebsite = () => {
         </section>
       </main>
 
+
+
       <footer className="mt-16 pt-8 border-t-2 border-black text-center text-sm">
-        <p>&copy; 2024 Attractor State. All rights reserved.</p>
+        <p>&copy; 2024 {name}. All rights reserved.</p>
         <p className="mt-2">///</p>
       </footer>
-    </div>
+    </div >
+
   );
 };
 
