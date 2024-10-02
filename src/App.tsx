@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NinetiesWebsite = () => {
-  const name = 'scalar labs';
+  const name = 'Entropy Labs';
   return (
     <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto space-y-6">
       <header className="border-b-2 border-black pb-8 mb-12 mt-16 space-y-4">
