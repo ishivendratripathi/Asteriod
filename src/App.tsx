@@ -6,7 +6,7 @@ const NinetiesWebsite = () => {
     <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto space-y-6">
       <header className="border-b-2 border-black pb-8 mb-12 mt-16 space-y-4">
         <h1 className="text-5xl font-bold tracking-">{name}</h1>
-        <p>Towards Scalable Oversight</p>
+        <p>Advanced agent oversight</p>
       </header>
 
 
@@ -14,33 +14,43 @@ const NinetiesWebsite = () => {
 
       <main className="space-y-12">
         <section>
-          <h2 className="text-3xl font-bold mb-4">Advanced agent oversight</h2>
           <p>
-            Entropy Labs is building the infrastructure to enable Scalable Oversight, making large scale agent clusters safer and more efficient using both automated and human review of agent actions.
+            Entropy Labs is building the infrastructure to enable Scalable Oversight, in pursuit of safe and effective agentic AI.
           </p>
           <br />
           <p>
-            When running thousands of agents with internet access and code execution on high risk tasks, we're providing granular observability into the actions of agents and their operating environments.
+            Using both automated and human review of agent actions we can enable fleets of thousands of agents to be run with internet access and code execution, and provide granular observability into the actions of agents and their operating environments.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">How?</h2>
+          <p>
+            To do this we're building an pluggable <b>Approval Manager</b> that integrates into your agent in a few lines of code. The Approval Manager integrates with a suite of <b>Approvers</b> to automate the detection, blocking and approval of actions. These Approvers monitor network requests, executed commands and actions taken in headless browsers, and can intelligently approve or block agent actions and escalate to human review when necessary.
           </p>
           <br />
           <p>
-            We're building a suite of "approvers" to automate the detection, blocking and approval of actions. These approvers monitor network requests, executed commands and actions taken in headless browsers, and can intelligently approve or block agent actions and escalate to human.
+            You don't have to use our Approvers, you can write your own.
+          </p>
+          <br />
+          <p>
+            With an Approval Manager we can orchestrate multiple Approvers, handling escalations for a layered approach to oversight, combining automated checks with human intervention when necessary.
           </p>
         </section>
 
         <section>
           <h2 className="text-3xl font-bold mb-4">The challenge</h2>
-          <p className="mb-6">Increasingly capable agentic AI systems with web access and code execution abilities present significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and enterprises trying to deploy agents into the wild to solve useful tasks.</p>
+          <p className="mb-6">Increasingly capable agentic AI systems with web access and code execution abilities present new challenges that existing zero-trust oversight techniques are ill-equipped to handle.</p>
           <p>We're transitioning into a world where:</p>
           <ul className="list-disc pl-8 mb-6 space-y-2">
-            <li>agents will be regularly writing and executing arbitrary code autonomously</li>
-            <li>agents will be <a className="text-blue-500" href="https://www.skyfire.xyz">making payments</a> on your behalf</li>
+            <li>highly capable agents will be writing and executing arbitrary code autonomously</li>
+            <li>agents that can operate at millions of requests per second will be <a className="text-blue-500" href="https://www.skyfire.xyz">making payments</a> on your behalf</li>
             <li>agents will be interacting with humans in <a className="text-blue-500" href="https://www.netcraft.com/news/netcraft-announces-new-ai-powered-innovations/">negotations without human oversight</a></li>
-            <li>agents will self-healing and evolving during runtime</li>
+            <li>agents will self-heal and evolving during runtime</li>
 
 
           </ul>
-          <p className="mb-6">Current oversight techniques like continual human monitoring are not a viable long term solution as we move towards clusters of millions of agents performing economically useful activity on the internet. It is imperative that those deploying agents in the wild have the ability to detect and avoid problematic or unintended behaviors of their systems. Lack of these systems will hinder confident deployment in real-world scenarios and limit the usefulness of agent research and activity. Our platform addresses the following key challenges:</p>
+          <p className="mb-6">Current oversight techniques used for agentic systems like continuous human monitoring are not a viable long term solution as we move towards clusters of millions of agents performing economically useful activity on the internet. It is imperative that those deploying agents in the wild have the ability to detect and avoid problematic or unintended behaviors of their systems. Lack of these systems will hinder confident deployment in real-world scenarios and limit the usefulness of agent research and activity. Our platform addresses the following key challenges:</p>
           <ul className="list-disc pl-8 mb-6 space-y-2">
             <li>There are no good solutions to real-time monitoring of AI agent actions</li>
             <li>Approval mechanisms for accepting or rejecting agent actions are primitive and inflexible</li>
