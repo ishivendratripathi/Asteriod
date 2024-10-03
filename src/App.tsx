@@ -6,23 +6,37 @@ const NinetiesWebsite = () => {
     <div className="bg-white text-black font-serif p-8 max-w-4xl mx-auto space-y-6">
       <header className="border-b-2 border-black pb-8 mb-12 mt-16 space-y-4">
         <h1 className="text-5xl font-bold tracking-">{name}</h1>
-        <p>Towards safe deployment of fully agentic sytems</p>
+        <p>Towards Scalable Oversight</p>
       </header>
 
 
 
 
       <main className="space-y-12">
+        <section>
+          <h2 className="text-3xl font-bold mb-4">Advanced agent oversight</h2>
+          <p>
+            Entropy Labs is building the infrastructure to enable Scalable Oversight, making large scale agent clusters safer and more efficient using both automated and human review of agent actions.
+          </p>
+          <br />
+          <p>
+            When running thousands of agents with internet access and code execution on high risk tasks, we're providing granular observability into the actions of agents and their operating environments.
+          </p>
+          <br />
+          <p>
+            We're building a suite of "approvers" to automate the detection, blocking and approval of actions. These approvers monitor network requests, executed commands and actions taken in headless browsers, and can intelligently approve or block agent actions and escalate to human.
+          </p>
+        </section>
 
         <section>
-          <h2 className="text-3xl font-bold my-8">Are you sure you want to deploy that?</h2>
-          <p className="mb-6">Increasingly capable agentic AI system with web access and code execution abilities presents significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and enterprises trying to deploy agents into the wild to solve useful tasks.</p>
+          <h2 className="text-3xl font-bold mb-4">The challenge</h2>
+          <p className="mb-6">Increasingly capable agentic AI systems with web access and code execution abilities present significant challenges. Ensuring safe and controlled operations has become a critical concern for research labs and enterprises trying to deploy agents into the wild to solve useful tasks.</p>
           <p>We're transitioning into a world where:</p>
           <ul className="list-disc pl-8 mb-6 space-y-2">
             <li>agents will be regularly writing and executing arbitrary code autonomously</li>
             <li>agents will be <a className="text-blue-500" href="https://www.skyfire.xyz">making payments</a> on your behalf</li>
             <li>agents will be interacting with humans in <a className="text-blue-500" href="https://www.netcraft.com/news/netcraft-announces-new-ai-powered-innovations/">negotations without human oversight</a></li>
-            <li>Self-healing and evolving during runtime</li>
+            <li>agents will self-healing and evolving during runtime</li>
 
 
           </ul>
@@ -35,9 +49,11 @@ const NinetiesWebsite = () => {
           </ul>
         </section>
 
+
         <section>
-          <h2 className="text-3xl font-bold mb-4">Advanced agent oversight</h2>
-          <p>We're proposing a way to monitor agents operating at scale in the wild. With just a few lines of code added to your agentic system scaffold we can provide you with security and oversight mechanisms customized to your needs, so that you can have peace of mind when deploying your systems. Our features include:</p>
+          <h3 className="text-2xl font-bold">
+            Key Features
+          </h3>
           <ol className="list-decimal pl-8 space-y-4">
             <li><strong>Human-in-the-Loop Interface:</strong> Efficient monitoring and intervention interface for human reviewers</li>
             <li><strong>Pluggable Approvers:</strong> A flexible system of approval mechanisms customizable to specific AI applications, ranging from simple allow-list checks to complex AI-powered oversight models.</li>
@@ -49,7 +65,7 @@ const NinetiesWebsite = () => {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-4">Enhancing AI Safety in Research and Development</h2>
+          <h2 className="text-3xl font-bold mb-4">Where we're headed</h2>
           <p className="mb-6">Our AI Agent Oversight Platform offers a comprehensive solution for research labs and AI developers seeking to enhance the safety and controllability of their AI agent deployments. By choosing our platform, you gain:</p>
           <ul className="list-disc pl-8 space-y-2">
             <li>Improved safety and controllability in AI agent deployments</li>
@@ -68,7 +84,26 @@ const NinetiesWebsite = () => {
 
       <footer className="mt-16 pt-8 border-t-2 border-black text-center text-sm">
         <p>&copy; 2024 {name}. All rights reserved.</p>
-        <p className="mt-2">///</p>
+        <p className="mt-2">
+          <pre>
+            {`
+     ___
+    /   \
+  |  O  O |
+          |   ∩   |
+             \___/
+    /     \
+  |       |---O
+  |       |
+  |       |---O
+    \     /
+      | |
+    /   \
+    /     \
+          `}
+          </pre>
+
+        </p>
       </footer>
     </div >
 
