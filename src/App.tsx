@@ -26,9 +26,9 @@ const NinetiesWebsite = () => {
         <section>
           <h2 className="text-3xl font-bold mb-4">Use case</h2>
           <ul className="list-disc pl-8 space-y-2">
-            <li>You're a an AI lab evaluating the capabilities of agents at scale in high-risk domains. You want to have absolute control over what actions are executed on the world without having to manually review everything your agents do</li>
+            <li>You're a an AI lab evaluating the capabilities of agents at scale in high-risk domains. You want to have absolute control over what actions are executed in the world and in your environments, without having to manually review everything your agents do</li>
             <li>You're a research scientist that wants to evaluate the efficacy of new control methods for agentic systems</li>
-            <li>You're a developer building an AI pipeline and you want to deploy an early agent to your customers and iteratively improve it and avoid embarassing failures</li>
+            <li>You're a developer building an AI pipeline and you want to deploy an early agent to your customers, iteratively improve it and avoid critical failures</li>
           </ul>
         </section>
 
@@ -54,7 +54,7 @@ const NinetiesWebsite = () => {
           <ul className="list-disc pl-8 mb-6 space-y-2">
             <li>highly capable agents will be writing and executing arbitrary code autonomously</li>
             <li>agents that can operate at millions of requests per second will be <a className="text-blue-500" href="https://www.skyfire.xyz">making payments</a> on your behalf</li>
-            <li>agents will be interacting with humans in <a className="text-blue-500" href="https://www.netcraft.com/news/netcraft-announces-new-ai-powered-innovations/">negotations without human oversight</a></li>
+            <li>agents will be interacting with humans in <a className="text-blue-500" href="https://www.netcraft.com/news/netcraft-announces-new-ai-powered-innovations/">negotiations without human oversight</a></li>
             <li>agents will self-heal and evolving during runtime</li>
 
 
@@ -71,11 +71,12 @@ const NinetiesWebsite = () => {
 
         <section>
           <h3 className="text-2xl font-bold">
-            Key Features
+            Features
           </h3>
+          <p>We provide infrastructure that slots into your existing agent code in a few lines and offers the following capabilities:</p>
           <ol className="list-decimal pl-8 space-y-4">
-            <li><strong>Human-in-the-Loop Interface:</strong> Efficient monitoring and intervention interface for human reviewers</li>
-            <li><strong>Pluggable Approvers:</strong> A flexible system of approval mechanisms customizable to specific AI applications, ranging from simple allow-list checks to complex AI-powered oversight models.</li>
+            <li><strong>Approvers:</strong> A simple system that allows you to define arbitrary checks for agent actions, ranging from simple allow-list checks to complex AI-powered oversight models. Use ours or bring your own.</li>
+            <li><strong>Human-in-the-Loop Interface:</strong> We provide an efficient monitoring and intervention interface for human reviewers</li>
             <li><strong>Approval Manager:</strong> Orchestrates multiple Approvers, handling escalations and logging decisions for a layered approach to oversight, combining automated checks with human intervention when necessary.</li>
             <li><strong>Granular Action Monitoring:</strong> Comprehensive monitoring of network requests, executed commands, and detailed actions in headless browsers, providing unparalleled visibility into AI agent behaviors.</li>
             <li><strong>Policy-Based Control:</strong> Define custom policies for automatic approval or blocking of agent actions based on predefined criteria, reducing the need for constant human supervision.</li>
@@ -92,11 +93,15 @@ const NinetiesWebsite = () => {
             <li>Efficient management of large-scale evaluations</li>
             <li>A forward-looking solution adaptable to evolving AI technologies</li>
           </ul>
+
         </section>
 
-        <section className="mt-16">
+        <section className="mt-16 space-y-8">
+          <p>
+            We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please get in touch and we'll help you integrate it.
+          </p>
           <p className="text-center text-xl">
-            <a href="#" className="text-blue-700 underline mr-8">contact</a>
+            <a href="mail:devs@entropy-labs.ai" className="text-blue-700 underline mr-8">devs@entropy-labs.ai</a>
           </p>
         </section>
       </main>
