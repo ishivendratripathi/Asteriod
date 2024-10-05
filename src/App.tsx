@@ -19,8 +19,17 @@ const NinetiesWebsite = () => {
           </p>
           <br />
           <p>
-            Using both automated and human review of agent actions we can enable fleets of thousands of agents to be run with internet access and code execution, and provide granular observability into the actions of agents and their operating environments.
+            Using both automated and manual review of agent actions, we're aiming to enable large fleets of agents to operate on the internet, whilst providing granular observability into the agents and their operating environments.
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-3xl font-bold mb-4">Use case</h2>
+          <ul className="list-disc pl-8 space-y-2">
+            <li>You're a an AI lab evaluating the capabilities of agents at scale in high-risk domains. You want to have absolute control over what actions are executed on the world without having to manually review everything your agents do</li>
+            <li>You're a research scientist that wants to evaluate the efficacy of new control methods for agentic systems</li>
+            <li>You're a developer building an AI pipeline and you want to deploy an early agent to your customers and iteratively improve it and avoid embarassing failures</li>
+          </ul>
         </section>
 
         <section>
