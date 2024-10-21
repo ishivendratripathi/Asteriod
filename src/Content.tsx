@@ -221,7 +221,7 @@ const ChallengeSection = () => (
       Entropy Labs is building the foundation for a future where billions of AI agents can be deployed reliably, scalably, and safely in any context. Our goal is to ensure that as AI agents become integral to our digital infrastructure, we maintain control, understanding, and trust in their operations through rigorous supervision and evaluation.
     </p>
 
-    <p>
+    <p className="pt-16">
       We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please
       {" "}
       <a href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
@@ -229,10 +229,7 @@ const ChallengeSection = () => (
       </a>!
     </p>
 
-    <p>
-    </p>
-
-    <footer className="mt-16 py-8 border-t-2 border-black text-center text-sm flex flex-row justify-between">
+    <footer className="pt-16 py-8 text-center text-sm flex flex-row justify-between">
       <p>&copy; 2024 Entropy Labs. All rights reserved.</p>
       <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="">
         <GithubIcon className="h-4 w-4 inline" />
