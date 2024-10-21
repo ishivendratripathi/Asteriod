@@ -76,7 +76,7 @@ export default function Component() {
   ]
 
   return (
-    <div className="container mx-auto space-y-16 pt-24">
+    <div className="container mx-auto space-y-16 pt-36">
       <Card className="outline-none shadow-none border-none">
         <CardHeader className="px-0 pb-12">
           <CardTitle className="">
@@ -103,7 +103,7 @@ export default function Component() {
               </div>
             </div>
           </CardTitle>
-          <CardDescription className="text-lg">Supervision and control for agentic systems</CardDescription>
+          <CardDescription className="text-lg">Supervision and evaluation for agentic systems</CardDescription>
         </CardHeader>
         <CardContent className="px-0 pb-0">
           <p className="px-0">
