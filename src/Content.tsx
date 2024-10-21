@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card"
 import * as React from "react"
-import { GithubIcon } from "lucide-react"
+import { GithubIcon, CalendarIcon, MailIcon } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
 
 export default function Component() {
@@ -84,22 +84,34 @@ export default function Component() {
               <p className="text-4xl font-bold">
                 Entropy Labs
               </p>
-              <div className="flex flex-row items-center gap-4">
-                <button
-                  onClick={copyEmail}
-                  className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative"
-                >
-                  devs@entropy-labs.ai
-                  {copied && (
-                    <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-300 text-white text-xs py-1 px-2 rounded">
-                      Copied!
-                    </span>
-                  )}
-                </button>
+              <div className="flex flex-col items-end gap-2">
+                <div className="flex flex-row items-center gap-8">
+                  <button
+                    onClick={copyEmail}
+                    className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
+                  >
+                    <MailIcon className="h-4 w-4" />
+                    copy email
+                    {copied && (
+                      <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-300 text-white text-xs py-1 px-2 rounded">
+                        Copied!
+                      </span>
+                    )}
+                  </button>
+                  <a
+                    href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
+                  >
+                    <CalendarIcon className="h-4 w-4" />
+                    book demo
+                  </a>
 
-                <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
-                  <img src="https://img.shields.io/github/stars/EntropyLabsAI/sentinel?style=social" alt="GitHub stars" />
-                </a>
+                  <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <img src="https://img.shields.io/github/stars/EntropyLabsAI/sentinel?style=social" alt="GitHub stars" />
+                  </a>
+                </div>
               </div>
             </div>
           </CardTitle>
