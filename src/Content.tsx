@@ -119,7 +119,7 @@ export default function Component() {
         </CardHeader>
         <CardContent className="px-0 pb-0">
           <p className="px-0">
-            Entropy Labs enables <b className="text-foreground">supervision and control of AI agents</b>, unlocking broad deployment across complex and critical domains. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
+            We're enabling safe and effective agentic systems by using automated <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b>. Entropy Labs exists to make the deployment of agentic systems across complex and critical domains not only possible, but rapid, reliable, and scalable. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
             This empowers agent operators to <b className="text-foreground">flag and mitigate unexpected behaviours</b>, uncover failure modes, and significantly reduce development time while enhancing agent reliability. Our system leverages agent traces to automatically generate evaluations, conduct regression tests, and iteratively improve cognitive architectures.
           </p>
         </CardContent>
