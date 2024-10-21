@@ -120,7 +120,7 @@ export default function Component() {
         <CardContent className="px-0 pb-0">
           <p className="px-0">
             Entropy Labs enables <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b> of AI agents, unlocking safe, reliable and scalable deployment in any domain. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
-            This empowers agent operators to <b className="text-foreground">flag and mitigate unexpected behaviours</b>, uncover failure modes, and significantly reduce development time while enhancing agent reliability. Our system leverages agent traces to automatically generate evaluations, conduct regression tests, and iteratively improve cognitive architectures.
+            This empowers agent operators to <b className="text-foreground">flag and mitigate unexpected behaviors</b>, uncover failure modes, and significantly reduce development time while enhancing agent reliability. Our system leverages agent traces to automatically generate evaluations, conduct regression tests, and iteratively improve cognitive architectures.
           </p>
         </CardContent>
       </Card>
@@ -222,23 +222,23 @@ const ChallengeSection = () => (
     </p>
 
     <p>
-      If any of this aligns with your needs, please reach out!{" "}
-      <a href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-primary hover:underline">
-        Schedule a meeting
-      </a>
+      We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please
+      {" "}
+      <a href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
+        schedule a meeting
+      </a>!
     </p>
 
     <p>
-      We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please get in touch and we'll help you integrate it.
     </p>
 
-    <footer className="mt-16 p-8 border-t-2 border-black text-center text-sm flex flex-row justify-between">
+    <footer className="mt-16 py-8 border-t-2 border-black text-center text-sm flex flex-row justify-between">
       <p>&copy; 2024 Entropy Labs. All rights reserved.</p>
-      <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+      <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="">
         <GithubIcon className="h-4 w-4 inline" />
       </a>
       <p className="text-center text-xl">
-        <a href="mail:devs@entropy-labs.ai" className="text-blue-700 underline mr-8">devs@entropy-labs.ai</a>
+        <a href="mail:devs@entropy-labs.ai" className="text-blue-500 text-lg">devs@entropy-labs.ai</a>
       </p>
     </footer>
   </div>
