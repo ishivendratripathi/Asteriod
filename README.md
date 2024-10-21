@@ -1,4 +1,6 @@
-# A static landing page
+# Entropy Labs Website
+
+A simple static website built with React, Shadcn, and Tailwind. 
 
 ### Development
 ```bash
