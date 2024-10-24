@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card"
 import * as React from "react"
-import { GithubIcon, CalendarIcon, MailIcon } from "lucide-react"
+import { GithubIcon, CalendarIcon, MailIcon, TerminalIcon, BookIcon } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
 
 export default function Component() {
@@ -91,7 +91,7 @@ export default function Component() {
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
                   >
                     <MailIcon className="h-4 w-4" />
-                    copy email
+                    Contact
                     {copied && (
                       <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-300 text-white text-xs py-1 px-2 rounded">
                         Copied!
@@ -105,7 +105,13 @@ export default function Component() {
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
                   >
                     <CalendarIcon className="h-4 w-4" />
-                    book demo
+                    Demo
+                  </a>
+
+                  <a href="https://docs.entropy-labs.ai"
+                    className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2">
+                    <BookIcon className="h-4 w-4" />
+                    Docs
                   </a>
 
                   <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
