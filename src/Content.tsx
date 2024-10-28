@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./com
 import * as React from "react"
 import { GithubIcon, CalendarIcon, MailIcon, TerminalIcon, BookIcon } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
+import { MailingList } from "./components/mailing_list"
 
 export default function Component() {
   const [copied, setCopied] = useState(false)
@@ -130,6 +131,8 @@ export default function Component() {
           </p>
         </CardContent>
       </Card>
+
+      <MailingList />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map((feature, index) => (
