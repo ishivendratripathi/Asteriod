@@ -132,7 +132,6 @@ export default function Component() {
         </CardContent>
       </Card>
 
-      <MailingList />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map((feature, index) => (
@@ -237,6 +236,10 @@ const ChallengeSection = () => (
         schedule a meeting
       </a>!
     </p>
+
+    <div className="pt-16">
+      <MailingList />
+    </div>
 
     <footer className="pt-16 py-8 text-center text-sm flex flex-row justify-between">
       <p>&copy; 2024 Entropy Labs. All rights reserved.</p>
