@@ -77,15 +77,15 @@ export default function Component() {
   ]
 
   return (
-    <div className="container mx-auto space-y-16 pt-36">
+    <div className="container mx-auto space-y-16 pt-36 px-8">
       <Card className="outline-none shadow-none border-none">
         <CardHeader className="px-0 pb-12">
           <CardTitle className="">
-            <div className="flex flex-row items-center justify-between">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
               <p className="text-4xl font-bold">
                 Entropy Labs
               </p>
-              <div className="flex flex-col items-end gap-2">
+              <div className="w-full md:w-auto">
                 <div className="flex flex-row items-center gap-8">
                   <button
                     onClick={copyEmail}
@@ -162,9 +162,9 @@ export default function Component() {
       <div className="flex flex-col gap-4">
         <p className="text-3xl font-bold">Use Cases</p>
         <Tabs defaultValue="developers" className="w-full rounded-none">
-          <TabsList className="grid w-full grid-cols-3 rounded-none">
+          <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 rounded-none h-auto">
             {tabsContent.map((tab) => (
-              <TabsTrigger key={tab.value} value={tab.value} className="rounded-none">
+              <TabsTrigger key={tab.value} value={tab.value} className="rounded-none data-[state=active]:bg-gray-100">
                 {tab.title}
               </TabsTrigger>
             ))}
