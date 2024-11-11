@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card"
 import * as React from "react"
-import { GithubIcon, CalendarIcon, MailIcon, TerminalIcon, BookIcon } from "lucide-react"
+import { GithubIcon, CalendarIcon, MailIcon, TerminalIcon, BookIcon, LibraryIcon } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
 import { MailingList } from "./components/mailing_list"
+import { Link } from "react-router-dom"
 
 export default function Component() {
   const [copied, setCopied] = useState(false)
@@ -82,9 +83,11 @@ export default function Component() {
         <CardHeader className="px-0 pb-12">
           <CardTitle className="">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
-              <p className="text-4xl font-bold">
-                Entropy Labs
-              </p>
+              <Link to="https://entropy-labs.ai">
+                <p className="text-4xl font-bold">
+                  Entropy Labs
+                </p>
+              </Link>
               <div className="w-full md:w-auto">
                 <div className="flex flex-row items-center gap-8">
                   <button
@@ -114,6 +117,13 @@ export default function Component() {
                     <BookIcon className="h-4 w-4" />
                     Docs
                   </a>
+
+                  <a href="https://blog.entropy-labs.ai/agents"
+                    className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2">
+                    <LibraryIcon className="h-4 w-4" />
+                    Blog
+                  </a>
+
 
                   <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
                     <img src="https://img.shields.io/github/stars/EntropyLabsAI/sentinel?style=social" alt="GitHub stars" />
