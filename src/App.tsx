@@ -3,7 +3,7 @@ import Content from './Content';
 
 const Home = () => {
   return (
-    <div className="font-serif max-w-4xl mx-auto">
+    <div className="font-serif max-w-6xl mx-auto">
       <Content />
     </div >
   );
