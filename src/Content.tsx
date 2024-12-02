@@ -125,8 +125,8 @@ export default function Component() {
                   </a>
 
 
-                  <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
-                    <img src="https://img.shields.io/github/stars/asteroidsh/sentinel?style=social" alt="GitHub stars" />
+                  <a href="https://github.com/asteroidai/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <img src="https://img.shields.io/github/stars/asteroidai/sentinel?style=social" alt="GitHub stars" />
                   </a>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Component() {
         <p className="text-3xl font-bold">Introducing <b className="text-gray-700" >Sentinel</b> </p>
         <p className="">We have just open sourced our first project, <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
         <p>
-          To get started, check out the <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
+          To get started, check out the <a href="https://github.com/asteroidai/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
         </p>
       </div>
 
@@ -246,7 +246,7 @@ const ChallengeSection = () => (
     <p className="pt-16">
       We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please
       {" "}
-      <a href="https://calendly.com/david-mlcoch-asteroid/asteroid-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
+      <a href="https://calendly.com/founders-asteroid/30min" target="_blank" rel="noopener noreferrer" className="text-blue-500">
         schedule a meeting
       </a>!
     </p>
@@ -255,9 +255,12 @@ const ChallengeSection = () => (
       <MailingList />
     </div>
 
+    <div className="calendly-inline-widget" data-url="https://calendly.com/founders-asteroid/30min" style={{ minWidth: '320px', height: '700px' }}></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
     <footer className="pt-16 py-8 text-center text-sm flex flex-row justify-between">
       <p>&copy; 2024 Asteroid. All rights reserved.</p>
-      <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="">
+      <a href="https://github.com/asteroidai/sentinel" target="_blank" rel="noopener noreferrer" className="">
         <GithubIcon className="h-4 w-4 inline" />
       </a>
       <p className="text-center text-xl">
