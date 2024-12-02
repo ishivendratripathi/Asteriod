@@ -1,4 +1,4 @@
-# Entropy Labs Website
+# Asteroid Website
 
 A simple static website built with React, Shadcn, and Tailwind. 
 

@@ -10,7 +10,7 @@ export default function Component() {
   const [copied, setCopied] = useState(false)
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("devs@entropy-labs.ai")
+    navigator.clipboard.writeText("founders@asteroid.sh")
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -83,9 +83,9 @@ export default function Component() {
         <CardHeader className="px-0 pb-12">
           <CardTitle className="">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
-              <Link to="https://entropy-labs.ai">
+              <Link to="https://asteroid.sh">
                 <p className="text-4xl font-bold">
-                  Entropy Labs
+                  Asteroid
                 </p>
               </Link>
               <div className="w-full md:w-auto">
@@ -103,7 +103,7 @@ export default function Component() {
                     )}
                   </button>
                   <a
-                    href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo"
+                    href="https://calendly.com/david-mlcoch-asteroid/demo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
@@ -112,36 +112,40 @@ export default function Component() {
                     Demo
                   </a>
 
-                  <a href="https://docs.entropy-labs.ai"
+                  <a href="https://docs.asteroid.sh"
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2">
                     <BookIcon className="h-4 w-4" />
                     Docs
                   </a>
 
-                  <a href="https://blog.entropy-labs.ai/agents"
+                  <a href="https://blog.asteroid.sh/agents"
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2">
                     <LibraryIcon className="h-4 w-4" />
                     Blog
                   </a>
 
 
-                  <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
-                    <img src="https://img.shields.io/github/stars/EntropyLabsAI/sentinel?style=social" alt="GitHub stars" />
+                  <a href="https://github.com/asteroidsh/asteroid" target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <img src="https://img.shields.io/github/stars/asteroidsh/asteroid?style=social" alt="GitHub stars" />
                   </a>
                 </div>
               </div>
             </div>
           </CardTitle>
-          <CardDescription className="text-lg">Supervision and evaluation for agentic systems</CardDescription>
+          <CardDescription className="text-lg">Runtime agent control</CardDescription>
         </CardHeader>
         <CardContent className="px-0 pb-0">
           <p className="px-0">
-            Entropy Labs enables <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b> of AI agents, unlocking safe, reliable and scalable deployment in any domain. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
+            Asteroid enables <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b> of AI agents, unlocking safe, reliable and scalable deployment in any domain. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
             This empowers agent operators to <b className="text-foreground">flag and mitigate unexpected behaviors</b>, uncover failure modes, and significantly reduce development time while enhancing agent reliability. Our system leverages agent traces to automatically generate evaluations, conduct regression tests, and iteratively improve cognitive architectures.
           </p>
         </CardContent>
       </Card>
 
+      {/* <div className="flex items-center justify-center gap-2 py-4">
+        <img src="src/y.png" alt="Y Combinator Logo" className="h-4" />
+        <span className="text-sm text-muted-foreground">Backed by Y Combinator</span>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map((feature, index) => (
@@ -163,9 +167,9 @@ export default function Component() {
 
       <div className="bg-gray-100 p-6 space-y-4">
         <p className="text-3xl font-bold">Introducing <b className="text-gray-700" >Sentinel</b> </p>
-        <p className="">We have just open sourced our first project, <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
+        <p className="">We have just open sourced our first project, <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
         <p>
-          To get started, check out the <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
+          To get started, check out the <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
         </p>
       </div>
 
@@ -183,7 +187,7 @@ export default function Component() {
             <TabsContent key={tab.value} value={tab.value} className="bg-gray-100 p-6">
               <h3 className="text-lg font-semibold mb-2">{tab.title}</h3>
               <p className="mb-4"><strong>Challenge:</strong> {tab.challenge}</p>
-              <p className="mb-2">Entropy Labs {tab.value === "researchers" ? "provides researchers with" : "empowers " + tab.value + " to"}:</p>
+              <p className="mb-2">Asteroid {tab.value === "researchers" ? "provides researchers with" : "empowers " + tab.value + " to"}:</p>
               <ul className="list-disc pl-5 mb-4">
                 {tab.benefits.map((benefit, index) => (
                   <li key={index}>{benefit}</li>
@@ -236,13 +240,13 @@ const ChallengeSection = () => (
     </div>
 
     <p>
-      Entropy Labs is building the foundation for a future where billions of AI agents can be deployed reliably, scalably, and safely in any context. Our goal is to ensure that as AI agents become integral to our digital infrastructure, we maintain control, understanding, and trust in their operations through rigorous supervision and evaluation.
+      Asteroid is building the foundation for a future where billions of AI agents can be deployed reliably, scalably, and safely in any context. Our goal is to ensure that as AI agents become integral to our digital infrastructure, we maintain control, understanding, and trust in their operations through rigorous supervision and evaluation.
     </p>
 
     <p className="pt-16">
       We're currently working with early adopters to build out this technology. If you're an AI lab or an agent company and would like to test it out, please
       {" "}
-      <a href="https://calendly.com/david-mlcoch-entropy-labs/entropy-labs-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
+      <a href="https://calendly.com/david-mlcoch-asteroid/asteroid-demo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
         schedule a meeting
       </a>!
     </p>
@@ -252,12 +256,12 @@ const ChallengeSection = () => (
     </div>
 
     <footer className="pt-16 py-8 text-center text-sm flex flex-row justify-between">
-      <p>&copy; 2024 Entropy Labs. All rights reserved.</p>
-      <a href="https://github.com/EntropyLabsAI/sentinel" target="_blank" rel="noopener noreferrer" className="">
+      <p>&copy; 2024 Asteroid. All rights reserved.</p>
+      <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="">
         <GithubIcon className="h-4 w-4 inline" />
       </a>
       <p className="text-center text-xl">
-        <a href="mail:devs@entropy-labs.ai" className="text-blue-500 text-lg">devs@entropy-labs.ai</a>
+        <a href="mail:devs@asteroid.sh" className="text-blue-500 text-lg">devs@asteroid.sh</a>
       </p>
     </footer>
   </div>
