@@ -103,7 +103,7 @@ export default function Component() {
                     )}
                   </button>
                   <a
-                    href="https://calendly.com/david-mlcoch-asteroid/demo"
+                    href="https://calendly.com/founders-asteroid/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-muted-foreground font-mono font-normal tracking-wide hover:text-foreground transition-colors relative flex items-center gap-2"
