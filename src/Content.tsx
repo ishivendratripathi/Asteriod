@@ -167,9 +167,9 @@ export default function Component() {
 
       <div className="bg-gray-100 p-6 space-y-4">
         <p className="text-3xl font-bold">Introducing <b className="text-gray-700" >Sentinel</b> </p>
-        <p className="">We have just open sourced our first project, <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
+        <p className="">We have just open sourced our first project, <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
         <p>
-          To get started, check out the <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
+          To get started, check out the <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
         </p>
       </div>
 
@@ -257,11 +257,11 @@ const ChallengeSection = () => (
 
     <footer className="pt-16 py-8 text-center text-sm flex flex-row justify-between">
       <p>&copy; 2024 Asteroid. All rights reserved.</p>
-      <a href="https://github.com/Asteroid/sentinel" target="_blank" rel="noopener noreferrer" className="">
+      <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="">
         <GithubIcon className="h-4 w-4 inline" />
       </a>
       <p className="text-center text-xl">
-        <a href="mail:devs@asteroid.sh" className="text-blue-500 text-lg">devs@asteroid.sh</a>
+        <a href="mail:founders@asteroid.sh" className="text-blue-500 text-lg">founders@asteroid.sh</a>
       </p>
     </footer>
   </div>
