@@ -125,8 +125,8 @@ export default function Component() {
                   </a>
 
 
-                  <a href="https://github.com/asteroidsh/asteroid" target="_blank" rel="noopener noreferrer" className="inline-block">
-                    <img src="https://img.shields.io/github/stars/asteroidsh/asteroid?style=social" alt="GitHub stars" />
+                  <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <img src="https://img.shields.io/github/stars/asteroidsh/sentinel?style=social" alt="GitHub stars" />
                   </a>
                 </div>
               </div>
