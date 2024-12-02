@@ -167,7 +167,7 @@ export default function Component() {
 
       <div className="bg-gray-100 p-6 space-y-4">
         <p className="text-3xl font-bold">Introducing <b className="text-gray-700" >Sentinel</b> </p>
-        <p className="">We have just open sourced our first project, <a href="https://github.com/asteroidsh/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
+        <p className="">We have just open sourced our first project, <a href="https://github.com/asteroidai/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 ">Sentinel <GithubIcon className="h-4 w-4 inline" /></a>, the software layer that enables scalable oversight of agentic systems with quantitative safety guarantees, enabling safe and effective agentic AI systems in the wild. </p>
         <p>
           To get started, check out the <a href="https://github.com/asteroidai/sentinel" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">GitHub repository</a>.
         </p>
