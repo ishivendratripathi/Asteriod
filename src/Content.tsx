@@ -136,7 +136,7 @@ export default function Component() {
         </CardHeader>
         <CardContent className="px-0 pb-0">
           <p className="px-0">
-            Asteroid enables <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b> of AI agents, unlocking safe, reliable and scalable deployment in any domain. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
+            Asteroid enables <b className="text-foreground">supervision</b> and <b className="text-foreground">evaluation</b> of AI agents, allowing for safe, reliable and scalable deployment in any domain. We supervise agents during experimentation and deployment, surfacing critical information to developers, automatically enforcing <b className="text-foreground">supervision policies</b>, and creating domain-specific evaluations.
             This empowers agent operators to <b className="text-foreground">flag and mitigate unexpected behaviors</b>, uncover failure modes, and significantly reduce development time while enhancing agent reliability. Our system leverages agent traces to automatically generate evaluations, conduct regression tests, and iteratively improve cognitive architectures.
           </p>
         </CardContent>
