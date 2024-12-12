@@ -55,7 +55,7 @@ export default function Step123() {
         </div>
       </div>
 
-      <div className="space-y-16">
+      <div className="space-y-32">
         {/* Step 1 */}
         <div ref={terminal1Ref} className="flex flex-col md:flex-row md:items-center gap-8">
           <div className="md:w-1/5 flex flex-col items-center justify-center text-center mb-4 md:mb-0">

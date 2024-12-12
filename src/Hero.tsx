@@ -48,11 +48,8 @@ export default function Hero() {
         <div className="space-y-24">
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tight font-bold font-['Source_Serif_4'] text-white">
-            Make your AI agent production ready.
+            You're worried about the safety and reliability of your AI agents.
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-400">
-            Deploy <span className="font-semibold italic">safe</span> and <span className="font-semibold italic">reliable</span> AI agents with real-time monitoring and intervention
-          </p>
         </div>
         <motion.div
           initial="hidden"
@@ -60,7 +57,10 @@ export default function Hero() {
           variants={containerVariants}
           className="text-base sm:text-lg lg:text-xl mb-12 text-gray-400 max-w-3xl mx-auto"
         >
-          <div className="flex flex-col items-start w-full max-w-3xl mx-auto pl-16">
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-400">
+            Our platform enforces <span className="font-semibold italic">safeguards</span>, detects <span className="font-semibold italic">failures</span>, and enables real-time <span className="font-semibold italic">human intervention</span>.
+          </p>
+          {/* <div className="flex flex-col items-start w-full max-w-3xl mx-auto pl-16">
             {listItems.map((item, index) => (
               <motion.div
                 key={index}
@@ -74,7 +74,7 @@ export default function Hero() {
                 <p className="text-left font-semibold">{item}</p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
         <div>
           <Link to="https://calendly.com/founders-asteroid/30min">
@@ -92,7 +92,7 @@ export default function Hero() {
               )}
             >
               <span className="relative z-10 flex items-center font-bold tracking-wide">
-                Get Access
+                Book a demo
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />
               </span>
             </Button>
