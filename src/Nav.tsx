@@ -39,7 +39,7 @@ const navItems = [
 const socialItems = [
   {
     icon: GithubIcon,
-    href: "https://github.com/asteroidai/sentinel-python-sdk",
+    href: "https://github.com/asteroidai/asteroid-python-sdk",
     label: "GitHub"
   },
   {
