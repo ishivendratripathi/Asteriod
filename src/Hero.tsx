@@ -44,10 +44,10 @@ export default function Hero() {
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white/70 py-12">
       {/* <Nav /> */}
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         <div className="space-y-24">
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tight font-bold font-['Source_Serif_4'] text-white">
+          <h1 className="text-5xl sm:text-8xl lg:text-7xl tracking-tight font-bold font-thin text-white">
             You're worried about the safety and reliability of your AI agents.
           </h1>
         </div>
@@ -55,10 +55,10 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="text-base sm:text-lg lg:text-xl mb-12 text-gray-400 max-w-3xl mx-auto"
+          className="text-base sm:text-lg lg:text-xl mb-12 text-gray-400 max-w-6xl mx-auto"
         >
           <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-400">
-            Our platform enforces <span className="font-semibold italic">safeguards</span>, detects <span className="font-semibold italic">failures</span>, and enables real-time <span className="font-semibold italic">human intervention</span>.
+            Our platform enforces <span className="font-semibold">safeguards</span>, detects <span className="font-semibold">failures</span>, and enables real-time <span className="font-semibold">human intervention</span>.
           </p>
           {/* <div className="flex flex-col items-start w-full max-w-3xl mx-auto pl-16">
             {listItems.map((item, index) => (
