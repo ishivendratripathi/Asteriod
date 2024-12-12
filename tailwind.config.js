@@ -7,9 +7,6 @@ export default {
 	],
 	theme: {
 		extend: {
-			fontFamily: {
-				merriweather: ['Merriweather', 'serif'],
-			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -56,8 +53,7 @@ export default {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
 				}
-			}
+			},
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
 }
