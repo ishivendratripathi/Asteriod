@@ -77,7 +77,7 @@ export default function Hero() {
           </div> */}
         </motion.div>
         <div>
-          <Link to="https://calendly.com/founders-asteroid/30min">
+          <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
             <Button
               size="lg"
               className={cn(

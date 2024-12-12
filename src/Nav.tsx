@@ -31,7 +31,7 @@ const iconMotionProps = {
 
 // Navigation items
 const navItems = [
-  { name: "Demo", href: "https://calendly.com/founders-asteroid/30min", icon: CalendarIcon },
+  { name: "Demo", href: "https://calendly.com/founders-asteroid-hhaf/30min", icon: CalendarIcon },
   { name: "Docs", href: "https://docs.asteroid.ai", icon: BookIcon },
   { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
 ]

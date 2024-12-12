@@ -53,7 +53,7 @@ export default function Challenges() {
             If you're deploying agents and running into challenges relating to reliability, safety or performance, we'd love to chat.
           </p>
           <div>
-            <Link to="https://calendly.com/founders-asteroid/30min">
+            <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
               <Button
                 size="lg"
                 className={cn(
