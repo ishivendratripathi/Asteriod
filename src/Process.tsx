@@ -24,7 +24,7 @@ export function DeploymentSteps() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center mb-12 text-white font-bold font-['Source_Serif_4']">
+        <h2 className="text-4xl text-center mb-12 text-white font-semibold">
           From Passive Monitoring to Active Control
         </h2>
         {/* Subtitle */}
@@ -36,7 +36,7 @@ export function DeploymentSteps() {
             <div key={index} className="relative">
               <Card className="relative bg-[#111132]/60 backdrop-blur-md h-full border-none shadow-lg transition-transform transform hover:scale-105 hover:shadow-indigo-500/25">
                 <CardHeader className="p-6 space-y-8">
-                  <CardTitle className="flex items-center text-white font-bold tracking-tight font-['Source_Serif_4']">
+                  <CardTitle className="flex items-center text-white font-semibold tracking-tight">
                     {step.icon}
                     {step.title}
                   </CardTitle>

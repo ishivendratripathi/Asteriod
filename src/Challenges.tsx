@@ -44,7 +44,7 @@ export default function Challenges() {
   return (
     <section ref={containerRef} className="text-white min-h-screen ">
       <div className="text-center rounded-3xl backdrop-blur-sm space-y-24">
-        <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 font-['Source_Serif_4']">
+        <h2 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
           Asteroid is building the foundation for an agent-based future.
         </h2>
         {/* Subtitle */}

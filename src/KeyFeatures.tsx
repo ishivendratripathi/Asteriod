@@ -41,7 +41,7 @@ export function KeyFeatures() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center mb-12 text-white font-bold font-['Source_Serif_4']">Benefits of Using Asteroid</h2>
+        <h2 className="text-4xl text-center mb-12 text-white font-semibold">Benefits of Using Asteroid</h2>
         <p className="text-center text-gray-400 mb-12">
           Transform your AI agents from experimental to enterprise-ready.
         </p>
@@ -64,7 +64,7 @@ export function KeyFeatures() {
                       className={`w-12 h-12 ${hoveredIndex === index ? feature.iconColor : feature.iconHoverColor
                         } transition-colors duration-300`}
                     />
-                    <CardTitle className="text-white font-bold tracking-tight font-['Source_Serif_4']">
+                    <CardTitle className="text-white font-semibold tracking-tight">
                       {feature.title}
                     </CardTitle>
                   </div>

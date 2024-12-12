@@ -14,7 +14,7 @@ export default function Step123() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pt-12">
       <div className="space-y-4">
-        <h2 className="text-3xl font-bold text-center text-white font-['Source_Serif_4']">Integration Steps</h2>
+        <h2 className="text-3xl font-semibold text-center text-white">Integration Steps</h2>
         <p className="text-lg text-center mb-8 text-gray-600">Up and running in 5 minutes</p>
       </div>
 
