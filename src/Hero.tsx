@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         <div className="space-y-24">
 
-          <h1 className="text-5xl sm:text-8xl lg:text-7xl tracking-tight font-bold font-thin text-white">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight font-bold font-thin text-white tracking-wide">
             You're worried about the safety and reliability of your AI agents.
           </h1>
         </div>
@@ -57,7 +57,7 @@ export default function Hero() {
           variants={containerVariants}
           className="text-base sm:text-lg lg:text-xl mb-12 text-gray-400 max-w-6xl mx-auto"
         >
-          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-400">
+          <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-400 tracking-wide">
             Our platform enforces <span className="font-semibold">safeguards</span>, detects <span className="font-semibold">failures</span>, and enables real-time <span className="font-semibold">human intervention</span>.
           </p>
           {/* <div className="flex flex-col items-start w-full max-w-3xl mx-auto pl-16">
