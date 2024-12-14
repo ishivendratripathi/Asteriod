@@ -120,9 +120,9 @@ def database_modify(query: str):
 `
 const step1Code = `
 
-# Initialize Sentinel
-run_id = sentinel_init()
+# Initialize Asteroid
+run_id = asteroid_init()
 
 # Wrap your favourite LLM client
-client = sentinel_openai_client(OpenAI(), run_id)
+client = asteroid_openai_client(OpenAI(), run_id)
 `
