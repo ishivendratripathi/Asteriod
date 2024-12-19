@@ -97,7 +97,7 @@ export default function Step123() {
             <div className="relative w-full aspect-video rounded-lg overflow-hidden">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/pOfnYkdLk18?si=d7EVA11f28Xr-vGr"
+                src="https://www.youtube.com/embed/X38hhugtRLg?si=NyqhPqHsrmBG-3dp&modestbranding=1"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
