@@ -1,6 +1,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
-import { MenuIcon, Slack, GithubIcon, BookIcon, LibraryIcon, CalendarIcon } from 'lucide-react'
+import { MenuIcon, Slack, GithubIcon, BookIcon, LibraryIcon, CalendarIcon, ArrowRight } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Link, useLocation } from "react-router-dom"
 import {
@@ -31,7 +31,6 @@ const iconMotionProps = {
 
 // Navigation items
 const navItems = [
-  { name: "Demo", href: "https://calendly.com/founders-asteroid-hhaf/30min", icon: CalendarIcon },
   { name: "Docs", href: "https://docs.asteroid.ai", icon: BookIcon },
   { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
 ]
@@ -180,6 +179,27 @@ export default function Nav() {
             </nav>
           </SheetContent>
         </Sheet>
+
+        <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
+          <Button
+            size="sm"
+            className={cn(
+              "relative group",
+              "before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500",
+              "before:opacity-100",
+              "text-white",
+              "transition-all duration-300",
+              "hover:scale-105 active:scale-95",
+              "shadow-lg shadow-indigo-500/25",
+              "overflow-hidden"
+            )}
+          >
+            <span className="relative z-10 flex items-center font-bold tracking-wide">
+              Book a demo
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
+            </span>
+          </Button>
+        </Link>
       </div>
     </nav>
   )

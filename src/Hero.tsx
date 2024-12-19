@@ -42,11 +42,8 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden text-white/70 py-12">
-      {/* <Nav /> */}
-      {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         <div className="space-y-24">
-
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight font-bold font-thin text-white tracking-wide">
             You're worried about the safety and reliability of your AI agents.
           </h1>
