@@ -1,7 +1,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
-import { cn } from "@/lib/utils"
 import {
   TwitterIcon,
   GithubIcon,
@@ -124,7 +123,7 @@ export default function Footer() {
           {/* Mailing List */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Stay Updated</h3>
-            <p className="text-sm text-white/60">Get notified about agent updates.</p>
+            <p className="text-sm text-white/60">Stay at the forefront of agents and supervision.</p>
             <div className="flex gap-2">
               <Input
                 placeholder="name@email.com"
