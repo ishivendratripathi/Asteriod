@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./com
 import * as React from "react"
 import { GithubIcon, CalendarIcon, MailIcon, TerminalIcon, BookIcon, LibraryIcon } from "lucide-react"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
-import { MailingList } from "./components/mailing_list"
+import { MailingList } from "./components/MailingList"
 import { Link } from "react-router-dom"
 import Stars from "./Stars"
 import Hero from "./Hero"

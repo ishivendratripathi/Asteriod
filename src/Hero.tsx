@@ -48,6 +48,7 @@ export default function Hero() {
             You're worried about the safety and reliability of your AI agents.
           </h1>
         </div>
+
         <motion.div
           initial="hidden"
           animate="visible"
@@ -95,6 +96,25 @@ export default function Hero() {
             </Button>
           </Link>
         </div>
+
+        {/* Animated YC badge */}
+        <div className="pt-16">
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            className="flex items-center justify-center gap-3 text-gray-400"
+          >
+            <span className="text-lg">Backed by</span>
+            <img
+              src="/yc.png"
+              alt="Y Combinator"
+              className="h-8"
+            />
+          </motion.div>
+        </div>
+
       </div>
 
       {/* Scroll indicator */}
