@@ -121,7 +121,9 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-non backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between">
         <p className="text-2xl font-['Source_Serif_4'] font-bold text-white">
-          Asteroid
+          <Link to="/">
+            Asteroid
+          </Link>
         </p>
 
         {/* Desktop Navigation */}

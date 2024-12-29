@@ -12,6 +12,31 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						color: '#fff',
+						h1: {
+							color: '#fff',
+						},
+						h2: {
+							color: '#fff',
+						},
+						h3: {
+							color: '#fff',
+						},
+						strong: {
+							color: '#fff',
+						},
+						a: {
+							color: '#3b82f6',
+							'&:hover': {
+								color: '#60a5fa',
+							},
+						},
+					},
+				},
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
@@ -56,4 +81,7 @@ export default {
 			},
 		}
 	},
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 }
