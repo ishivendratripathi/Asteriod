@@ -27,8 +27,8 @@ const pricingPlans = [
   {
     name: "Premium",
     description: "For growing teams and startups",
-    price: "$399",
-    period: "/month",
+    price: "Custom",
+    period: "",
     features: [
       "All Developer features",
       "Unlimited pay-as-you-go agent runs",
@@ -45,7 +45,7 @@ const pricingPlans = [
   {
     name: "Enterprise",
     description: "For large organizations",
-    price: "Get in touch",
+    price: "Custom",
     period: "",
     features: [
       "All Premium features",
@@ -76,31 +76,31 @@ export default function PricingPage() {
         <h1 className="text-4xl font-semibold mb-4 text-white">Pricing Plans</h1>
         <p className="text-xl text-muted-foreground mb-12">Choose the perfect plan for your needs</p>
 
-        <div className="grid md:grid-cols-3 gap-8 w-full max-w-7xl">
+        <div className="grid md:grid-cols-3 gap-8 w-full max-w-7xl mt-16">
           {pricingPlans.map((plan) => (
             <Card
               key={plan.name}
-              className={`flex flex-col transition-all duration-300 ease-in-out bg-slate-300 border-none
+              className={`flex flex-col transition-all duration-300 ease-in-out bg-[#0A0A1F] border-none text-white
                 ${plan.highlighted
-                  ? 'transform scale-105 shadow-lg border-primary hover:-translate-y-4 hover:shadow-2xl'
-                  : 'hover:-translate-y-2 hover:shadow-xl'
+                  ? 'transform scale-105 shadow-[0_0_30px_rgba(255,255,255,0.15)] border-primary hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)]'
+                  : 'hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] shadow-[0_0_20px_rgba(255,255,255,0.08)]'
                 }`}
             >
               <CardHeader>
-                <CardTitle className="text-2xl flex items-center justify-center">
+                <CardTitle className="text-2xl flex items-center justify-center text-white">
                   {plan.name}
                   {plan.highlighted && <Zap className="ml-2 h-5 w-5 text-primary" />}
                 </CardTitle>
-                <CardDescription className="text-center">{plan.description}</CardDescription>
+                <CardDescription className="text-center text-gray-400">{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-4xl font-bold mb-4">
+                <p className="text-4xl font-bold mb-4 text-white">
                   {plan.price}
-                  <span className="text-xl font-normal text-muted-foreground">{plan.period}</span>
+                  <span className="text-xl font-normal text-gray-400">{plan.period}</span>
                 </p>
                 <ul className="space-y-2">
                   {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-center">
+                    <li key={index} className="flex items-center text-gray-300">
                       <Check className="mr-2 h-5 w-5 text-primary" />
                       <span>{feature}</span>
                     </li>
