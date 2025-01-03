@@ -119,6 +119,19 @@ const NavItem = ({ item, index, mobile = false, onClick }: {
 
 export default function Nav() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [showCTA, setShowCTA] = React.useState(false)
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Get the height of the viewport
+      const viewportHeight = window.innerHeight
+      // Show CTA when scrolled past 80% of the first viewport height
+      setShowCTA(window.scrollY > viewportHeight * 0.8)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-non backdrop-blur-sm">
@@ -185,26 +198,32 @@ export default function Nav() {
           </SheetContent>
         </Sheet>
 
-        <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
-          <Button
-            size="sm"
-            className={cn(
-              "relative group",
-              "before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500",
-              "before:opacity-100",
-              "text-white",
-              "transition-all duration-300",
-              "hover:scale-105 active:scale-95",
-              "shadow-lg shadow-indigo-500/25",
-              "overflow-hidden"
-            )}
-          >
-            <span className="relative z-10 flex items-center font-semibold tracking-wide">
-              Book a demo
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
-            </span>
-          </Button>
-        </Link>
+        {/* Conditional CTA Button */}
+        <div className={cn(
+          "transition-all duration-300",
+          showCTA ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
+        )}>
+          <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
+            <Button
+              size="sm"
+              className={cn(
+                "relative group",
+                "before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500",
+                "before:opacity-100",
+                "text-white",
+                "transition-all duration-300",
+                "hover:scale-105 active:scale-95",
+                "shadow-lg shadow-indigo-500/25",
+                "overflow-hidden"
+              )}
+            >
+              <span className="relative z-10 flex items-center font-semibold tracking-wide">
+                Book a demo
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
+              </span>
+            </Button>
+          </Link>
+        </div>
       </div>
     </nav>
   )

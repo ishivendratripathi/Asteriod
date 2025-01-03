@@ -79,18 +79,18 @@ export default function PricingPage() {
           {pricingPlans.map((plan) => (
             <Card
               key={plan.name}
-              className={`flex flex-col transition-all duration-300 ease-in-out 
+              className={`flex flex-col transition-all duration-300 ease-in-out bg-slate-300 border-none
                 ${plan.highlighted
                   ? 'transform scale-105 shadow-lg border-primary hover:-translate-y-4 hover:shadow-2xl'
                   : 'hover:-translate-y-2 hover:shadow-xl'
                 }`}
             >
               <CardHeader>
-                <CardTitle className="text-2xl flex items-center">
+                <CardTitle className="text-2xl flex items-center justify-center">
                   {plan.name}
                   {plan.highlighted && <Zap className="ml-2 h-5 w-5 text-primary" />}
                 </CardTitle>
-                <CardDescription>{plan.description}</CardDescription>
+                <CardDescription className="text-center">{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-4xl font-bold mb-4">
