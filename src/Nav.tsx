@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import MeetingButton from "./MeetingButton"
 
 const NavLink = motion(Link)
 
@@ -203,26 +204,7 @@ export default function Nav() {
           "transition-all duration-300",
           showCTA ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         )}>
-          <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
-            <Button
-              size="sm"
-              className={cn(
-                "relative group",
-                "before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500",
-                "before:opacity-100",
-                "text-white",
-                "transition-all duration-300",
-                "hover:scale-105 active:scale-95",
-                "shadow-lg shadow-indigo-500/25",
-                "overflow-hidden"
-              )}
-            >
-              <span className="relative z-10 flex items-center font-semibold tracking-wide">
-                Book a demo
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
-              </span>
-            </Button>
-          </Link>
+          <MeetingButton />
         </div>
       </div>
     </nav>

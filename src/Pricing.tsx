@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import Page from './components/Page'
 import { Link } from 'react-router-dom'
+import MeetingButton from './MeetingButton'
 const pricingPlans = [
   {
     name: "Developer",
@@ -36,7 +37,7 @@ const pricingPlans = [
       "Automated prompt optimization",
       "Dedicated Slack support channel",
     ],
-    buttonText: "Contact Sales",
+    buttonText: "Contact Us",
     buttonVariant: "primary",
     buttonHref: "mailto:founders@asteroid.ai",
     highlighted: true,
@@ -54,7 +55,7 @@ const pricingPlans = [
       "Self-hosted deployment options",
       "Dedicated support engineer with SLA",
     ],
-    buttonText: "Contact Sales",
+    buttonText: "Contact Us",
     buttonVariant: "outline",
     buttonHref: "mailto:founders@asteroid.ai",
     highlighted: false,
@@ -108,16 +109,10 @@ export default function PricingPage() {
               </CardContent>
               <CardFooter className="flex justify-end">
                 <Link to={plan.buttonHref}>
-                  <Button
-                    className={`w-full transition-all duration-300 
-                    ${plan.highlighted
-                        ? 'bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105'
-                        : 'transition-colors'
-                      }`}
-                    variant={plan.buttonVariant as any}
-                  >
-                    {plan.buttonText}
-                  </Button>
+                  <MeetingButton
+                    size="lg"
+                    text={plan.buttonText}
+                  />
                 </Link>
               </CardFooter>
             </Card>

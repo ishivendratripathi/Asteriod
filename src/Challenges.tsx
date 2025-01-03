@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import { Button } from "./components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { cn } from "./utils"
+import MeetingButton from "./MeetingButton"
 // import { Badge } from "@/components/ui/badge"
 
 export default function Challenges() {
@@ -53,26 +54,7 @@ export default function Challenges() {
             If you're deploying agents and running into challenges relating to reliability, safety or performance, we'd love to chat.
           </p>
           <div>
-            <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
-              <Button
-                size="lg"
-                className={cn(
-                  "relative group",
-                  "before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-r before:from-indigo-500 before:to-purple-500",
-                  "before:opacity-100",
-                  "text-white",
-                  "transition-all duration-300",
-                  "hover:scale-105 active:scale-95",
-                  "shadow-lg shadow-indigo-500/25",
-                  "overflow-hidden"
-                )}
-              >
-                <span className="relative z-10 flex items-center font-bold tracking-wide">
-                  Get in touch
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />
-                </span>
-              </Button>
-            </Link>
+            <MeetingButton />
           </div>
         </div>
 
