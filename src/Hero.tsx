@@ -7,11 +7,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
-  const listItems = [
-    "Developers and process owners set safeguards for LLM outputs and tool calls",
-    "Asteroid enforces safeguards, detects failures, and enables real-time human intervention",
-    "Feedback improves agent safety and alignment"
-  ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -45,7 +40,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         <div className="space-y-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight font-bold font-thin text-white tracking-wide">
-            You're worried about the safety and reliability of your AI agents.
+            Don't deploy your LLM-powered applications in the dark.
           </h1>
         </div>
 

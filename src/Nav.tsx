@@ -1,6 +1,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
-import { MenuIcon, Slack, GithubIcon, BookIcon, LibraryIcon, CalendarIcon, ArrowRight } from 'lucide-react'
+import { MenuIcon, Slack, GithubIcon, BookIcon, LibraryIcon, CalendarIcon, ArrowRight, DollarSignIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { Link, useLocation } from "react-router-dom"
 import {
@@ -33,6 +33,7 @@ const iconMotionProps = {
 const navItems = [
   { name: "Docs", href: "https://docs.asteroid.ai", icon: BookIcon },
   { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
+  { name: "Pricing", href: "/pricing", icon: DollarSignIcon },
 ]
 
 const socialItems = [

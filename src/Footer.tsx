@@ -2,14 +2,12 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import {
-  TwitterIcon,
   GithubIcon,
   LinkedinIcon,
   BookIcon,
   LibraryIcon,
   MailIcon,
   CalendarIcon,
-  XIcon
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -31,7 +29,11 @@ const iconVariants = {
 }
 
 const socialLinks = [
-  { name: "", href: "https://x.com/asteroid_ai", icon: XIcon },
+  {
+    name: "",
+    href: "https://x.com/asteroid_inc",
+    icon: () => <img src="/twitter.png" alt="X/Twitter" className="h-3 w-3 brightness-0 invert" />
+  },
   { name: "", href: "https://github.com/asteroidai", icon: GithubIcon },
   { name: "", href: "https://linkedin.com/company/asteroid-ai", icon: LinkedinIcon },
 ]

@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import Page from '@/components/Page';
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <Page>
       <h1 className="text-6xl font-bold text-gray-300 mb-4">404</h1>
       <p className="text-xl text-gray-600 mb-8">Oops! You're lost in space.</p>
       <Link
@@ -12,7 +13,7 @@ const NotFound = () => {
       >
         <span className="text-gray-300">Back to the ship &rarr;</span>
       </Link>
-    </div>
+    </Page>
   );
 };
 
