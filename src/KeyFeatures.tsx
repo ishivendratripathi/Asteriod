@@ -10,28 +10,28 @@ const features = [
     title: "Full Control, Zero Compromise",
     description: "Enjoy the benefits of autonomy in AI agents without the risk. Step in when needed, while agents perform independently when trusted.",
     iconColor: "text-emerald-400",
-    iconHoverColor: "text-emerald-600"
+    iconHoverColor: "text-purple-600"
   },
   {
     icon: Zap,
     title: "Enforce Policies with Precision",
     description: "Set clear boundaries for agent behavior and enforce them in real time. Ensure adherence to rules you define, from data access to ethical standards.",
     iconColor: "text-amber-400",
-    iconHoverColor: "text-amber-600"
+    iconHoverColor: "text-purple-600"
   },
   {
     icon: RefreshCw,
     title: "Continuous Evolution",
     description: "Bridge the gap between developers and domain experts, turning every interaction into an opportunity for improvement.",
     iconColor: "text-sky-400",
-    iconHoverColor: "text-sky-600"
+    iconHoverColor: "text-purple-600"
   },
   {
     icon: UserCheck,
     title: "Adaptive Learning for Safer Operations",
     description: "Enable agents to gradually take on more responsibility and make autonomous decisions without compromising safety.",
     iconColor: "text-purple-400",
-    iconHoverColor: "text-purple-600"
+    iconHoverColor: "text-purple-900"
   }
 ]
 

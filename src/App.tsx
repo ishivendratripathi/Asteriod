@@ -22,23 +22,25 @@ export default function App() {
         </div>
 
         {/* Main content */}
-        <div className="relative z-10">
+        <div className="relative z-10 flex flex-col space-y-32 md:space-y-48 lg:space-y-64">
           <div className="container mx-auto">
             <Hero />
           </div>
 
-          <div className="bg-[#0A0A1F] w-full">
-            <Step123 />
+          <div className="bg-[#0A0A1F] w-full flex flex-col space-y-24 md:space-y-32 lg:space-y-48">
+            <div className="container max-w-6xl mx-auto">
+              <Step123 />
+            </div>
+            <div className="container max-w-6xl mx-auto">
+              <DeploymentSteps />
+            </div>
+            <div className="container max-w-6xl mx-auto">
+              <KeyFeatures />
+            </div>
           </div>
 
           <div className="space-y-32 md:space-y-48 lg:space-y-64">
-
-            <DeploymentSteps />
-
-            <KeyFeatures />
-
             <Challenges />
-
           </div>
 
         </div>

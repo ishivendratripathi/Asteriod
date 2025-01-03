@@ -12,12 +12,12 @@ export function DeploymentSteps() {
     {
       title: "Enable Interventions",
       description: "Once confident, activate real-time supervision to prevent errors before they occur.",
-      icon: <Activity className="mr-2 text-yellow-400" />
+      icon: <Activity className="mr-2 text-blue-400" />
     },
     {
       title: "Reduce Oversight",
       description: "Your agent learns from each interaction, requiring fewer manual interventions over time.",
-      icon: <Brain className="mr-2 text-purple-400" />
+      icon: <Brain className="mr-2 text-blue-400" />
     }
   ]
 

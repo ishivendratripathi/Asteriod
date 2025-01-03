@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Highlight, themes } from "prism-react-renderer"
-import { CopyIcon, CheckIcon } from "lucide-react"
+import { CopyIcon, CheckIcon, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const defaultCode = ``
@@ -12,6 +12,7 @@ interface TerminalProps {
   lineNumbers?: boolean
   copyButton?: boolean
   width?: string | number
+  allowClose?: boolean
 }
 
 export const Terminal: React.FC<TerminalProps> = ({
@@ -20,10 +21,12 @@ export const Terminal: React.FC<TerminalProps> = ({
   language = "python",
   lineNumbers = true,
   copyButton = true,
-  width = "100%"
+  width = "100%",
+  allowClose = true
 }) => {
   const [showModal, setShowModal] = React.useState(false)
   const [copied, setCopied] = React.useState(false)
+  const [isVisible, setIsVisible] = React.useState(true)
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(code.trim())
@@ -35,19 +38,28 @@ export const Terminal: React.FC<TerminalProps> = ({
     width: typeof width === 'number' ? `${width}px` : width
   }
 
+  const handleCloseClick = () => {
+    if (allowClose) {
+      setIsVisible(false)
+    } else {
+      setShowModal(true)
+    }
+  }
+
+  if (!isVisible) return null;
+
   return (
     <>
       <div
-        className="rounded-lg overflow-hidden border border-gray-700 bg-[#0E0E0E] shadow-lg"
+        className="rounded-lg overflow-hidden border border-none bg-[#0E0E0E] shadow-lg"
         style={containerStyle}
       >
-        {/* Terminal Header */}
         <div className="bg-[#2D2D2D] px-6 py-2 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <div className="flex gap-2">
               <div
                 className="w-3 h-3 rounded-full bg-red-500 cursor-pointer hover:bg-red-600 transition-colors"
-                onClick={() => setShowModal(true)}
+                onClick={handleCloseClick}
               ></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
@@ -70,7 +82,6 @@ export const Terminal: React.FC<TerminalProps> = ({
           )}
         </div>
 
-        {/* Terminal Content */}
         <Highlight
           theme={themes.nightOwl}
           code={code.trim()}
@@ -97,22 +108,20 @@ export const Terminal: React.FC<TerminalProps> = ({
         </Highlight>
       </div>
 
-      {/* Easter Egg Modal */}
       {
         showModal && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-[#2D2D2D] p-6 rounded-lg shadow-xl max-w-md">
-              <h3 className="text-xl text-white mb-4"></h3>
-              <p className="text-gray-300 mb-4">
-                {/* Easter chicken emoji */}
-                🐣
-              </p>
-              <button
+            <div className="bg-[#2D2D2D] p-6 rounded-lg shadow-xl max-w-md relative">
+              <Button
+                variant="ghost"
                 onClick={() => setShowModal(false)}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors"
+                className="absolute top-2 right-2 bg-none hover:bg-none text-white"
               >
-                Close
-              </button>
+                <X className="h-4 w-4" />
+              </Button>
+              <p className="text-gray-300 mt-6">
+                Did you know, that even a relatively "small" asteroid impact (around 50 meters wide) could release energy equivalent to several nuclear bombs? The 1908 Tunguska event, believed to be caused by an asteroid or comet about this size, flattened 80 million trees over 830 square miles of Siberian forest.
+              </p>
             </div>
           </div>
         )

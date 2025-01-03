@@ -55,7 +55,7 @@ export default function Step123() {
             <p className="text-sm text-gray-400">Add a few lines of code and attach safety checks</p>
           </div>
           <div className="md:w-4/5 max-w-[600px]">
-            <Terminal code={step1Code} />
+            <Terminal code={step1Code} allowClose={false} />
           </div>
         </div>
 
