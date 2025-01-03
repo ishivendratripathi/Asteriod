@@ -9,7 +9,7 @@ import { InstallTabs } from "./Install"
 
 export default function App() {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="">
 
       <div className="relative min-h-screen">
         {/* Stars as background */}
@@ -22,11 +22,16 @@ export default function App() {
         </div>
 
         {/* Main content */}
-        <div className="relative z-10 container mx-auto px-4 md:px-8">
-          <Hero />
+        <div className="relative z-10">
+          <div className="container mx-auto">
+            <Hero />
+          </div>
+
+          <div className="bg-[#0A0A1F] w-full">
+            <Step123 />
+          </div>
 
           <div className="space-y-32 md:space-y-48 lg:space-y-64">
-            <Step123 />
 
             <DeploymentSteps />
 

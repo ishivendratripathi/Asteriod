@@ -95,7 +95,9 @@ const NavItem = ({ item, index, mobile = false, onClick }: {
         to={item.href}
         className={cn(
           navigationMenuTriggerStyle(),
-          "bg-transparent text-white hover:text-white/80 hover:bg-transparent data-[state=open]:bg-transparent active:bg-transparent focus:bg-transparent focus:outline-none"
+          "bg-transparent text-white hover:text-white/80 hover:bg-transparent data-[state=open]:bg-transparent active:bg-transparent focus:bg-transparent focus:outline-none",
+          "hover:bg-transparent active:bg-transparent focus:bg-transparent active:text-white",
+          "data-[active]:bg-transparent data-[state=open]:bg-transparent"
         )}
         initial="initial"
         animate="animate"
@@ -103,7 +105,7 @@ const NavItem = ({ item, index, mobile = false, onClick }: {
         variants={navItemVariants}
         custom={index}
       >
-        <motion.div {...iconMotionProps} className="flex items-center gap-2">
+        <motion.div {...iconMotionProps} className="flex items-center gap-2 text-white">
           <div>
 
             <item.icon className="h-4 w-4" />
@@ -197,7 +199,7 @@ export default function Nav() {
               "overflow-hidden"
             )}
           >
-            <span className="relative z-10 flex items-center font-bold tracking-wide">
+            <span className="relative z-10 flex items-center font-semibold tracking-wide">
               Book a demo
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
             </span>

@@ -72,7 +72,7 @@ export default function Hero() {
             ))}
           </div> */}
         </motion.div>
-        <div>
+        <div className="">
           <Link to="https://calendly.com/founders-asteroid-hhaf/30min">
             <Button
               size="lg"
@@ -87,9 +87,13 @@ export default function Hero() {
                 "overflow-hidden"
               )}
             >
-              <span className="relative z-10 flex items-center font-bold tracking-wide">
+              <span className="relative z-10 flex items-center gap-2 font-semibold tracking-wide transition-all duration-700">
                 Book a demo
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />
+                <img
+                  src="/favicon/favicon-32x32.png"
+                  alt="Asteroid Logo"
+                  className="w-6 h-6 group-hover:rotate-[360deg] transition-transform duration-700 ease-in-out"
+                />
               </span>
             </Button>
           </Link>
@@ -108,15 +112,15 @@ export default function Hero() {
             <img
               src="/yc.png"
               alt="Y Combinator"
-              className="h-8"
+              className="h-8 brightness-0 invert"
             />
           </motion.div>
         </div>
 
-      </div>
+      </div >
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-16 w-full flex justify-center">
+      < div className="absolute bottom-16 w-full flex justify-center" >
         <ChevronDown
           size={48}
           className="text-white/50 hover:text-white/70 transition-colors cursor-pointer animate-bounce"
@@ -127,8 +131,8 @@ export default function Hero() {
             });
           }}
         />
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }
 
