@@ -38,6 +38,7 @@ const pricingPlans = [
     ],
     buttonText: "Contact Sales",
     buttonVariant: "primary",
+    buttonHref: "mailto:founders@asteroid.ai",
     highlighted: true,
   },
   {
@@ -55,6 +56,7 @@ const pricingPlans = [
     ],
     buttonText: "Contact Sales",
     buttonVariant: "outline",
+    buttonHref: "mailto:founders@asteroid.ai",
     highlighted: false,
   }
 ]
