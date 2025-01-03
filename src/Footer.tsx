@@ -8,6 +8,7 @@ import {
   LibraryIcon,
   MailIcon,
   CalendarIcon,
+  DollarSignIcon,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -42,6 +43,7 @@ const resourceLinks = [
   { name: "Documentation", href: "https://docs.asteroid.ai", icon: BookIcon },
   { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
   { name: "Contact", href: "mailto:founders@asteroid.ai", icon: MailIcon },
+  { name: "Pricing", href: "/pricing", icon: DollarSignIcon },
   { name: "Demo", href: "https://calendly.com/founders-asteroid-hhaf/30min", icon: CalendarIcon },
 ]
 
@@ -72,8 +74,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link to="/" className="text-2xl font-bold text-white">
-              Asteroid
+            <Link to="/">
+              <p className="text-2xl font-['Source_Serif_4'] font-bold text-white">
+                Asteroid
+              </p>
             </Link>
             <p className="text-sm text-white/60">
               Building infrastructure for AI agents
@@ -125,7 +129,7 @@ export default function Footer() {
           {/* Mailing List */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Stay Updated</h3>
-            <p className="text-sm text-white/60">Stay at the forefront of agents and supervision.</p>
+            <p className="text-sm text-white/60">Stay at the forefront of agents and supervision. No spam, ever.</p>
             <div className="flex gap-2">
               <Input
                 placeholder="name@email.com"

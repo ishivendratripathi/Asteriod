@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-16">
         <div className="space-y-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight font-bold font-thin text-white tracking-wide">
-            Don't deploy your LLM-powered applications in the dark.
+            Take the YOLO out of your LLM-powered applications
           </h1>
         </div>
 

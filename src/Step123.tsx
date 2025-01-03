@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { ArrowDown, ArrowRight } from 'lucide-react'
 import Terminal from './Terminal'
+import Video from './Video'
 
 export default function Step123() {
   const terminal1Ref = React.useRef<HTMLDivElement>(null)
@@ -93,18 +94,20 @@ export default function Step123() {
             <h3 className="text-lg font-semibold text-white mb-2">Deploy & Monitor</h3>
             <p className="text-sm text-gray-400">Run your agent with confidence and monitor its actions in real-time</p>
           </div>
+          {/* <div className="w-full md:w-4/5 max-w-[600px]">
+            <iframe
+              width="600"
+              height="338"
+              src="https://www.youtube.com/embed/X38hhugtRLg?si=NyqhPqHsrmBG-3dp&modestbranding=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div> */}
           <div className="w-full md:w-4/5 max-w-[600px]">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/X38hhugtRLg?si=NyqhPqHsrmBG-3dp&modestbranding=1"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            </div>
+            <Video />
           </div>
         </div>
       </div>
