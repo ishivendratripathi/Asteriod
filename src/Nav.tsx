@@ -33,7 +33,7 @@ const iconMotionProps = {
 // Navigation items
 const navItems = [
   { name: "Docs", href: "https://docs.asteroid.ai", icon: BookIcon },
-  { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
+  { name: "Blog", href: "https://blog.asteroid.ai", icon: LibraryIcon },
   { name: "Pricing", href: "/pricing", icon: DollarSignIcon },
 ]
 

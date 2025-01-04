@@ -41,7 +41,7 @@ const socialLinks = [
 
 const resourceLinks = [
   { name: "Documentation", href: "https://docs.asteroid.ai", icon: BookIcon },
-  { name: "Blog", href: "https://blog.asteroid.ai/agents", icon: LibraryIcon },
+  { name: "Blog", href: "https://blog.asteroid.ai", icon: LibraryIcon },
   { name: "Contact", href: "mailto:founders@asteroid.ai", icon: MailIcon },
   { name: "Pricing", href: "/pricing", icon: DollarSignIcon },
   { name: "Demo", href: "https://calendly.com/founders-asteroid-hhaf/30min", icon: CalendarIcon },
